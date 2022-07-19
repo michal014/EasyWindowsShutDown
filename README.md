@@ -1,2 +1,4 @@
 # EasyWindowsShutDown
-Small program that can fast set delay shutdown
+Windows shutdown manager.
+Allow to delay windows shutdown
+Author: michal014
