@@ -1,0 +1,10 @@
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\bin\Debug\EasyWindowsShutDown.exe.config
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\bin\Debug\EasyWindowsShutDown.exe
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\bin\Debug\EasyWindowsShutDown.pdb
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\obj\Debug\EasyWindowsShutDown.csprojAssemblyReference.cache
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\obj\Debug\EasyWindowsShutDown.FormMain.resources
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\obj\Debug\EasyWindowsShutDown.Properties.Resources.resources
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\obj\Debug\EasyWindowsShutDown.csproj.GenerateResource.cache
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\obj\Debug\EasyWindowsShutDown.csproj.CoreCompileInputs.cache
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\obj\Debug\EasyWindowsShutDown.exe
+S:\Github\EasyWindowsShutDown\EasyWindowsShutDown\EasyWindowsShutDown\obj\Debug\EasyWindowsShutDown.pdb
