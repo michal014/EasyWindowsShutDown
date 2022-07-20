@@ -13,17 +13,56 @@ namespace EasyWindowsShutDown
 {
     public partial class FormMain : Form
     {
+        private static bool planned = false;
         public FormMain()
         {
             InitializeComponent();
         }
 
+        public void StartMethod()
+        {
+            numericUpDownHours.Value = 0;
+            numericUpDownMinutes.Value = 0;
+            numericUpDownSecounds.Value = 0;
+
+            if (planned)
+            {
+                numericUpDownHours.Enabled = false;
+                numericUpDownMinutes.Enabled = false;
+                numericUpDownSecounds.Enabled = false;
+                buttonShutDown.Enabled = false;
+                buttonCancel.Enabled = true;
+            }
+            else
+            {
+                numericUpDownHours.Enabled = true;
+                numericUpDownMinutes.Enabled = true;
+                numericUpDownSecounds.Enabled = true;
+                buttonShutDown.Enabled = true;
+                buttonCancel.Enabled = false;
+            }
+        }
+
         private void buttonShutDown_Click(object sender, EventArgs e)
         {
-            long time = Convert.ToInt64(textBoxHours.Text) * 3600 + Convert.ToInt64(textBoxMinutes.Text) * 60 + Convert.ToInt64(textBoxSecounds.Text);
+            planned = true;
+            ulong time = Convert.ToUInt64(numericUpDownHours.Value) * 3600 + Convert.ToUInt64(numericUpDownMinutes.Value) * 60 + Convert.ToUInt64(numericUpDownSecounds.Value);
             string command = "/C shutdown -s -t "+ time.ToString();
-            Process cmd = new Process();
             System.Diagnostics.Process.Start("CMD.exe", command);
+            StartMethod();
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            planned = false;
+            string command = "/C shutdown -a ";
+            System.Diagnostics.Process.Start("CMD.exe", command);
+            StartMethod();
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            StartMethod();
         }
     }
 }
